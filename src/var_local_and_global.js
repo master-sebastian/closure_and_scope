@@ -22,6 +22,7 @@ const messageFunction = (valueMessage="") => {
     /**
      * La palabra let no deja inicializar dos veces en el mismo ambito pero deja que el valor 
      * de la variable sea reasignable sin problema 
+     * Funcion scope
      */
     let mgs = "let: "
     mgs += message
