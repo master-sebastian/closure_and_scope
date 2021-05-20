@@ -1,0 +1,12 @@
+{
+  "name": "closures_and_spoce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start_example_1": "node src/var_local_and_global.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
