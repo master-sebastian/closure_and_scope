@@ -6,15 +6,32 @@ var message = "Este es un mensaje desde el ambito global"
 /**
  * Al utilizar el const no se puede sobreescribir el valor de esta variable con otro valor
  * @param String valueMessage
- * @return String message 
+ * @return Object regresa un objeto con unas propiedades especificas 
  */
-const getMessage = (valueMessage="") => {
+const messageFunction = (valueMessage="") => {
     /*
      * Ambito lexico ya que es inicializada dentro de una funcion no 
      * interfire el inicializado de forma global
      */
-    return message
+    var message = valueMessage
+    /**
+     * Nos permite la palabra var nos dejara inicializar las variables sin problema 
+     */
+    var message = "var: "+message
+
+    /**
+     * La palabra let no deja inicializar dos veces en el mismo ambito pero deja que el valor 
+     * de la variable sea reasignable sin problema 
+     */
+    let mgs = "let: "
+    mgs += message
+    return { 
+        "getMessageTypeWithVar": message,
+        "getMessageTypeWithLet": mgs,
+    }
 }
 
-console.log(getMessage("Este es un mensaje desde el ambito lexico"))
+const mgs = "Este es un mensaje desde el ambito lexico"
+console.log(messageFunction(mgs).getMessageTypeWithVar)
+console.log(messageFunction(mgs).getMessageTypeWithLet)
 console.log(message)
