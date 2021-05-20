@@ -10,7 +10,14 @@
     "start_example_4": "node src/loops.js",
     "start_example_5": "node src/hoisting.js"
   },
-  "keywords": [],
+  "keywords": [
+    "devjs",
+    "debug",
+    "node",
+    "javascript",
+    "closures",
+    "scope"
+  ],
   "author": "",
-  "license": "ISC"
+  "license": "MIT"
 }
