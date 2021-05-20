@@ -7,7 +7,8 @@
     "start_example_1": "node src/var_local_and_global.js",
     "start_example_2": "node src/block_scope.js",
     "start_example_3": "node src/closure.js",
-    "start_example_4": "node src/loops.js"
+    "start_example_4": "node src/loops.js",
+    "start_example_5": "node src/hoisting.js"
   },
   "keywords": [],
   "author": "",
